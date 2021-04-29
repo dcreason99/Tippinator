@@ -3,9 +3,11 @@ package com.example.tippinator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     Button avgContinent;
 
     @Override
@@ -15,12 +17,13 @@ public class MainActivity extends AppCompatActivity {
         
         avgContinent = (Button) findViewById(R.id.avgContinent);
         
-        buttonContinent.setOnClickListener(new View.OnClickListener() {
+        avgContinent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {openMainActivityContinentSelector();}
         });
     }
     public void openMainActivityContinentSelector(){
+
     }
     
 }
